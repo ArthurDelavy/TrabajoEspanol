@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Exo:ital,wght@0,400;1,500&family=News+Cycle:wght@400;700&display=swap');
+
+:root {
+    --titulo-especial: 'Comfortaa', cursive, Arial, Helvetica, sans-serif;
+    --subtitulos: 'Exo', sans-serif, Arial, Helvetica, sans-serif;
+    --textos: 'News Cycle', sans-serif, Arial, Helvetica, sans-serif;
+
+    --cor1: #0D0D0D;
+    --cor2: #00011e;
+    --cor3: #595959;
+    --cor-texto1: #D9D9D9;
+    --cor-texto2: #F2F2F2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--textos);
+    color: var(--cor-texto2);
+    background-color: var(--cor2);
+}
+
+div.sobre {
+    display: flex;
+    height: 80vh;
+    background-color: var(--cor1);
+    border-radius: 0px 0px 30px 30px;
+}
+
+.texto-sobre {
+    padding-top: 2%;
+    padding-left: 10%;
+    width: 50vw;
+}
+
+.texto-sobre > h1 {
+    font-size: 20vh;
+    color: #f3f3f3a3;
+    text-shadow: -9px -5px 8px #404040;
+    line-height: 100%;
+}
+
+.texto-sobre > p {
+    font-size: 2.8vh;
+    text-align: justify;
+    padding-top: 2%;
+    padding-bottom: 20px;
+}
+
+.lista-sobre > ul {
+    font-size: 2.3vh;
+    padding-top: 5%;
+    padding-bottom: 10px;
+    line-height: 55px;
+    list-style: none;
+}
+
+.sobre > img {
+    padding-top: 20px;
+    padding-left: 10%;
+}
+
+section.familia,.afilhada,.signo,.animais,.tecnologia,.proletario,.aprender,.leitura {
+    height: 100vh;
+    min-height: fit-content;
+}
+
+section.familia > .titulo-familia > h2 {
+    font-size: 5vh;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+section.familia > .imagem-familia > img {
+    display: flex;
+    width: 50vw;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+section.afilhada > .titulo-afilhada > h2 {
+    font-size: 5vh;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+section.afilhada > .imagem-afilhada > img {
+    display: flex;
+    width: 50vw;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+.signo {
+    background-image: url('../img/fundosigno.png');
+    background-repeat: repeat;
+}
+
+.signo-cabecalho {
+    padding-top: 4%;
+    display: flex;
+}
+
+.signo-cabecalho > h2 {
+    margin: auto 5%;
+    font-size: 8vh;
+}
+
+section.signo > .signo-cabecalho > img {
+    max-height: 350px;
+    width: auto;
+    height: auto;
+}
+
+section.signo > .lista-libra {
+    padding-top: 5%;
+    font-size: 3vh;
+    line-height: 6vh;
+}
+
+.lista-libra > ul {
+    padding-left: 5vw;
+}
+
+.lista-libra > ul > li {
+    display: block;
+    margin: 0 8vw;
+    box-sizing: border-box;   
+    line-height: 8vh;                    
+}
+      
+.lista-libra > ul > li:nth-child(odd) {
+    clear: both;
+    float: left;
+    width: 50%;
+}
+
+section.animais {
+    height: 80vh;
+    background-image: url('../img/fundoanimais.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section.animais .cabecalho-animais {
+    padding: 2% 0 0 5%;
+    line-height: 4vh;
+}
+
+.cabecalho-animais > h2 {
+    font-size: 7vh;
+}
+
+.cabecalho-animais > p {
+    font-size: 2vh;
+}
+
+.conteudo-animais {
+    display: flex;
+    padding-top: 5%;
+}
+
+.conteudo-animais > img {
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    padding-left: 5%;
+}
+
+.conteudo-animais > p {
+    font-size: 3vh;
+    max-width: 1500px;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-left: 10%;
+}
+
+section.tecnologia {
+    background-image: url('../img/fundotecnologia.png');
+    background-size: cover;
+}
+
+.tecnologia > h2 {
+    padding: 2% 4% 0 0;
+    font-size: 4vh;
+    float: right;
+}
+
+.tecnologia-geral {
+    display: flex;
+}
+
+.conteudo-tecnologia {
+    padding-top: 13%;
+    width: 50%;
+    padding-left: 5%;
+}
+
+.conteudo-tecnologia > p {
+    font-size: 3vh;
+}
+
+.conteudo-tecnologia .listas-tecnologias {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.listas-tecnologias > ul {
+    font-size: 3vh;
+    padding-top: 5%;
+    margin: auto;
+}
+
+.listas-tecnologias > ul > li#triade {
+    list-style: none;
+}
+
+section.proletario {
+    background-image: url('../img/empregofundo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+section.proletario > h2 {
+    font-size: 5vh;
+    padding: 5% 3%;
+    height: 20vh;
+}
+
+.empresas h2 {
+    font-size: 4vh;
+    padding-bottom: 7%;
+    text-align: center;
+}
+
+.empresas p {
+    font-size: 3vh;
+    text-align: justify;
+}
+
+.empresas .fruki {
+    width: 30vw;
+    float: left;
+    padding-left: 4%;
+}
+
+.empresas .docile {
+    width: 30vw;
+    float: right;
+    padding-right: 4%;
+}
+
+.docile > p {
+    text-align: center;
+}
+
+section.aprender {
+    background-image: url('../img/fundocursos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.aprender > h2 {
+    font-size: 4.4vh;
+    padding: 50px 10vh;
+}
+
+.aprender-informacoes {
+    display: flex;
+}
+
+.aprender-informacoes p {
+    font-size: 2.8vh;
+    width: 40vw;
+    padding: 10vh 2vh;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+section.leitura {
+    background-image: url('../img/fundolivro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.leitura > h2 {
+    font-size: 4vh;
+    padding: 4% 0 1% 0;
+    text-align: center;
+}
+
+.livros {
+    display: flex;
+
+}
+
+.livros p {
+    font-size: 2.7vh;
+    width: 40vw;
+    margin: 0 auto;
+    padding: 5%;
+    text-align: justify;
+}
